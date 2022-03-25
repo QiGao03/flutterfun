@@ -1,6 +1,8 @@
 import 'package:feed_flutter/demo/BasicDemo.dart';
 import 'package:feed_flutter/demo/SliverMi.dart';
 import 'package:feed_flutter/demo/drawer_demo.dart';
+import 'package:feed_flutter/feed/controllers/HomeTabController.dart';
+import 'package:feed_flutter/main_page/BottomTabClick.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'demo/ViewDemo.dart';
@@ -29,51 +31,16 @@ class App extends StatelessWidget{
   }
 }
 
-class Home extends StatelessWidget{
+class Home extends StatelessWidget  {
+
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-        length: 4,
-        child: Scaffold(
-          backgroundColor: Colors.grey[100],
-          appBar: AppBar(
-
-            title: Text('小米'),
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.search),
-                tooltip: 'Search',
-                onPressed: ()=>debugPrint('Search button is pressed.'),
-              ),
-            ],
-            elevation: 0.0,
-            bottom: TabBar(
-              unselectedLabelColor: Colors.black38,
-              indicatorColor : Colors.black54,
-              indicatorSize: TabBarIndicatorSize.label,
-              indicatorWeight: 1.0,
-              tabs: <Widget>[
-                Tab(icon: Icon(Icons.local_florist)),
-                Tab(icon: Icon(Icons.change_history)),
-                Tab(icon: Icon(Icons.directions_bike)),
-                Tab(icon: Icon(Icons.view_quilt)),
-              ],
-            ),
-          ),
-          body: TabBarView(
-            children: <Widget>[
-              ListViewDemo(),
-             // Icon(Icons.change_history,size: 128.0,color: Colors.black),
-              BasicDemo(),
-              LayoutDemo(),
-              MiSliver()
-            ],
-          ),
-          drawer: DrawerDemo(),
-          bottomNavigationBar: MiBottomNavigationBar(),
-        ));
+    return HomeTabController();
   }
+
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
