@@ -3,10 +3,15 @@ class Post{
     this.title,
     this.author,
     this.imageUrl,
+    this.time,
+    this.commontCount
 });
   final String? title ;
   final String? author;
   final String? imageUrl;
+
+  final String ?  commontCount;
+  final String ? time;
 }
 
 final List<Post> post = [

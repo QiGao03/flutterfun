@@ -30,22 +30,22 @@ class MiBottomNavigationBarState extends State<MiBottomNavigationBar>{
   void _onTapHandler(int index){
     setState(() {
       _currentIndex = index;
-      switch(_currentIndex){
-        case 0:
-          _bottomTabClick(PageType.Index);
-          break;
-        case 1:
-          _bottomTabClick(PageType.Video);
-          break;
-
-        case 2:
-          _bottomTabClick(PageType.Theater);
-          break;
-
-        case 3:
-          _bottomTabClick(PageType.Theater);
-          break;
-      }
+      // switch(_currentIndex){
+      //   case 0:
+      //     _bottomTabClick(PageType.Index);
+      //     break;
+      //   case 1:
+      //     _bottomTabClick(PageType.Video);
+      //     break;
+      //
+      //   case 2:
+      //     _bottomTabClick(PageType.Theater);
+      //     break;
+      //
+      //   case 3:
+      //     _bottomTabClick(PageType.Theater);
+      //     break;
+      // }
 
     });
   }
