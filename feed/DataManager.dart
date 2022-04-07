@@ -16,8 +16,7 @@ class DataManager {
     return _instence;
   }
 
-  List<Post> data = MockData.post;
-
 
 }
+
 
