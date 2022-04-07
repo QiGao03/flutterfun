@@ -1,14 +1,6 @@
-import 'package:feed_flutter/demo/BasicDemo.dart';
-import 'package:feed_flutter/demo/SliverMi.dart';
-import 'package:feed_flutter/demo/drawer_demo.dart';
 import 'package:feed_flutter/feed/controllers/HomeTabController.dart';
-import 'package:feed_flutter/main_page/BottomTabClick.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'demo/ViewDemo.dart';
-import 'demo/listview-demo.dart';
-import 'demo/MiBottomNavigationBar.dart';
-import 'demo/Milayout.dart';
 
 void main() {
   runApp(
@@ -27,6 +19,11 @@ class App extends StatelessWidget{
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70
       ),
+
+
+
+
+
     );
   }
 }

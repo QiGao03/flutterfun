@@ -22,3 +22,9 @@ class _MovieCenterHomeState extends State<MinVideoHome> {
     );
   }
 }
+
+
+
+
+
+
